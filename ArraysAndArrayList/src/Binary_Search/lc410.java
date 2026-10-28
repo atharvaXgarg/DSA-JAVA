@@ -23,7 +23,9 @@ public class lc410 {
         }
         int start=min;int end=max;
         while(start<end){
+            // try for mid as potential answer
             int mid=start-(start-end)/2;
+            // calculate how many pieces you can divide this in with this max sum
             if(peice(nums,mid)<=k){
                 end=mid;
             }else{
